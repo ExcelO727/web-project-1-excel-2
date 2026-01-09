@@ -17,6 +17,28 @@
       <h1>This is a fan page about Lionel Messi</h1>
       <h2>This website will include his statistics, and his achievements</h2>
     </header>
-    <form></form>
+
+    <!-- 
+      This for tag has an ID of favourite-player-form to represent that
+      the form has questions that will track the user's answers about 
+      their favourite player.
+    -->
+    <form method="get" id="favourite-player-form">
+      <!-- 
+        Fieldset tags group different questions together with a border.
+      -->
+      <fieldset form="favourite-player-form">
+        <label for="player-name">What is your favourite player's name?: </label>
+        <input type="text" id="player-name" name="playerName" />
+
+        <br />
+        <br />
+
+        <label for="player-goals">
+          How many goals have they scored in their career?:
+        </label>
+        <input type="text" id="player-goals" name="playerGoals" />
+      </fieldset>
+    </form>
   </body>
 </html>
