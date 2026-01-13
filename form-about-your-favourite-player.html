@@ -56,13 +56,12 @@
           <u>What is your name? [eg. John Smith]</u>
         </label>
         <!-- 
-          The input tag has multiple different types like text, number,
-          checkbox, color, and much more. These types all do different
-          things, text creates a textbox that can be typed in, number
-          makes it so that only numbers can be typed into the textbox,
-          and checkbox makes a checkbox that you can click and select.
+          This is an input tag. It created an area of input depending on the
+          type attribute. If it is text, it creates a textbox. If it is radio,
+          it created different options to select from like multiple choice.
+          Other attributes are id which 
         -->
-        <input type="text" id="user-name" name="user-name" />
+        <input type="text" id="user-name" name="user-name" required />
 
         <br />
         <br />
@@ -75,7 +74,7 @@
           This is an email input tag. It is a special input used
           only for email 
         -->
-        <input type="email" id="user-email" name="user-email" />
+        <input type="email" id="user-email" name="user-email" required />
 
         <br />
         <br />
@@ -88,7 +87,11 @@
           This is a tel input tag. It is a special input type like email
           but only for telephone numbers.
         -->
-        <input type="tel" id="user-telephone-number" name="user-email" />
+        <input
+          type="tel"
+          id="user-telephone-number"
+          name="user-email"
+          required />
       </fieldset>
 
       <br />
