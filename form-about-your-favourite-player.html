@@ -37,7 +37,10 @@
         </legend>
 
         <!-- 
-          The label tag adds the question for the user to answer. 
+          The label tag adds the question for the user to answer. The only
+          necessary attribute it needs is for. The for attribute specifies
+          what input tag that the label is attached to. The for tag needs 
+          to have the id of the input tag it is.
         -->
         <label for="user-name">
           <u>What is your name? [eg. John Smith]</u>
@@ -54,13 +57,14 @@
         <br />
         <br />
 
+        <label for="user-email">
+          <u>What is your email? [eg. johnsmith@domain.com]</u>
+        </label>
+
         <!-- 
           This is an email input tag. It is a special input used
           only for email 
         -->
-        <label for="user-email">
-          <u>What is your email? [eg. johnsmith@domain.com]</u>
-        </label>
         <input type="email" id="user-email" name="user-email" />
 
         <br />
@@ -132,7 +136,7 @@
           id="four-plus"
           name="player-teams"
           value="four-plus" />
-        <label for="four-plus">4 and over</label>
+        <label for="four-plus">4+</label>
 
         <br />
         <br />
